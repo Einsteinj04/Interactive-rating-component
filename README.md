@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution](github.com/Einsteinj04/interactive-rating-component/)
-- Live Site URL: [Interactive-rating-component](interactive-app.netlify.app)
+- Live Site URL: [Interactive-rating-component](https://interactive-app.netlify.app)
 
 ## My process
 
