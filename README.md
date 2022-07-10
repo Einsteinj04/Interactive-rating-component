@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution](github.com/Einsteinj04/interactive-rating-component/)
+- Live Site URL: [Interactive-rating-component](interactive-app.netlify.app)
 
 ## My process
 
