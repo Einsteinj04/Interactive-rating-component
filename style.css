@@ -1,0 +1,174 @@
+/* SETUP */
+:root{
+    --primary-orange: hsl(25, 97%, 53%);
+    --neutral-white: hsl(0, 0%, 100%);
+    --neutral-light-grey: hsl(217, 12%, 63%);
+    --neutral-medium-grey: hsl(216, 12%, 54%);
+    --neutral-dark-blue: hsl(213, 19%, 13%);
+    --neutral-very-dark-blue: hsl(216, 12%, 8%);
+}
+*,::after,::before{
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+}
+body{
+    background-color: var(--neutral-very-dark-blue);
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+/* SETUP ENDS */
+
+/* CONTAINER SETUP STARTS*/
+#container{
+    background-color: var(--neutral-dark-blue);
+    width:350px;
+    height:420px;
+    border-radius:25px;
+    padding:35px;
+    display:flex;
+    flex-direction: column;
+}
+.hide{
+    display:none
+}
+.center{
+    text-align: center;
+}
+
+/* CONTAINER SETUP ENDS*/
+/* STARS SECTION STARTS */
+#stars{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+.star{
+    border: none;
+    padding: 25px;
+    width:17%;
+    background-color: hsl(217, 12%, 35%);
+    background-image: url(./images/icon-star.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* STARS SECTION ENDS */
+
+/* INFO STARTS */
+#heading{
+    color: var(--neutral-white);
+    font-size:25px;
+    font-family: 'Overpass';
+    padding:10px 0;
+    /* text-align: center; */
+}
+#text{
+    color: var(--neutral-light-grey);
+    font-size:15px;
+    font-family: 'Overpass';
+    line-height: 25px;
+    /* text-align: center; */
+}
+/* INFO ENDS */
+
+/* NUMBERS SECTION STARTS */
+.numbers{
+    display:flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.btn{
+    border: none;
+    padding: 15px;
+    width:17%;
+    background: hsl(217, 12%, 35%);
+    color: var(--neutral-light-grey);
+    border-radius:100%;
+    font-family: 'Overpass';
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn:hover{
+    background-color: var(--primary-orange);
+    color: var(--neutral-white)
+}
+.btn:active{
+    background-color: var(--neutral-very-dark-blue);
+    color: var(--neutral-white);
+}
+/* NUMBERS SECTION ENDS */
+
+/* BUTTON */
+#submit{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: 'Overpass';
+    color: var(--neutral-white);
+    background-color: var(--primary-orange);
+    border: none;
+    padding:10px;
+    border-radius:20px;
+    letter-spacing: 2px;
+    width:100%;
+}
+#submit:hover{
+    background-color: var(--neutral-white);
+    color: var(--primary-orange);
+    cursor: pointer;
+}
+/* END SECTION STARTS*/
+.end{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.image-wrapper{
+    background-image: url(./images/illustration-thank-you.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height:150px;
+    width:70%;
+    margin:auto;
+}
+.result{
+    color: var(--primary-orange);
+    font-family: 'Overpass';
+    padding: 5px;
+    text-align: center;
+    border-radius: 20px;
+    width:70%;
+    margin: 20px auto;
+    background-color: hsl(217, 12%, 35%);
+}
+/* END SECTION STOPS */
+/* MOBILE SCREEN SIZE */
+@media(max-width: 375px){
+    body{
+        padding: 20px
+    }
+    .star{
+        padding: 15px;
+        width: 12%;
+    }
+    .btn{
+        padding: 10px;
+        width: 17%;
+    }
+    .result{
+        font-size: 14px;
+        padding: 2px;
+        width:80%
+    }
+}
